@@ -3,103 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yzz Foods</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-600 font-body bg-gray-100">
-    <div><!--Content Wrapper-->
-        <div>
+
+<body class="text-gray-600 bg-gray-100 font-sans">
+
+    <div class="grid md:grid-cols-4">
+
+        <!-- NAV -->
+        <div class="md:col-span-1 bg-white shadow-md">
             <nav>
                 <div>
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-200">
-                        <a href="" class="text-green-500 sm:text-red-500">Yzz Foods</a>
+                    <h1 class="font-bold uppercase p-6 border-b">
+                        <a href="#" class="text-green-500 text-xl">Yzz Foods</a>
                     </h1>
                 </div>
-                <ul>
-                    <li class="">
-                        <a href="#">
-                            <span>Home</span>
-                        </a>
+
+                <ul class="p-6 space-y-4">
+                    <li>
+                        <a href="#" class="hover:text-green-500">Home</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span>About</span>
-                        </a>
+                        <a href="#" class="hover:text-green-500">About</a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span>Contact</span>
-                        </a>
+                        <a href="#" class="hover:text-green-500">Contact</a>
                     </li>
                 </ul>
             </nav>
-        </div><!--End Navigation-->
+        </div>
 
-        <main class="px-16 py-6">
-            <div class="flex justify-center 
-            md:justify-end">
-                <a href="#" class="text-primary">Login </a>
-                <a href="#" class="text-secondary-200 ml-2">Sign up </a>
+        <!-- MAIN CONTENT -->
+        <main class="px-6 py-6 md:col-span-3">
+
+            <!-- TOP RIGHT -->
+            <div class="flex justify-center md:justify-end mb-6">
+                <a href="#" class="text-blue-500">Login</a>
+                <a href="#" class="text-gray-500 ml-4">Sign up</a>
             </div>
 
-
+            <!-- HEADER -->
             <header>
-                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-                <h3 class="text-2xl">For the Peeps</h3>
+                <h2 class="text-gray-700 text-4xl md:text-6xl font-semibold">Recipes</h2>
+                <h3 class="text-xl md:text-2xl mt-2">For the Peeps</h3>
             </header>
 
+            <!-- LATEST RECIPES -->
             <div>
-                <h4 class="font-bold mt-12 pb-4 border-b border-red-200">Latest Recipes</h4>
-                <div class="mt-8 grid grid-cols-3">
-                    <!--Card go here-->
-                    <div class="card">
-                    <img src="assets/Img/stew.jpeg" alt="" class="'w-full h-32 sm:h-48 object-cover"/>
-                        <img src="" alt=""/>
-                        <div class="'m-4">
-                            <span class="font-bold">5 bean chillie stew</span>
-                            <span class="block text-gray-500 text-sm">Recipie by the Beast</span>
+                <h4 class="font-bold mt-12 pb-4 border-b border-red-200">
+                    Latest Recipes
+                </h4>
+
+                <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- CARD 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="assets/Img/stew.jpeg" class="w-full h-40 object-cover">
+
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">5 Bean Chilli Stew</h5>
+                            <p class="text-sm text-gray-500 mt-1">Recipe by the Beast</p>
                         </div>
-                        <div>
-                            <span class="">25 min</span>
+
+                        <div class="px-4 pb-4">
+                            <span class="text-sm text-gray-700">⏱ 25 min</span>
                         </div>
                     </div>
 
-                    <div class="card">
-                    <img src="assets/Img/Curry.jpeg" alt="" class="'w-full h-32 sm:h-48 object-cover"/>
-                        <img src="" alt=""/>
-                        <div class="'m-4">
-                            <span class="font-bold">Meat Curry</span>
-                            <span class="block text-gray-500 text-sm">Recipie by the Beast</span>
+                    <!-- CARD 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="assets/Img/Curry.jpeg" class="w-full h-40 object-cover">
+
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Meat Curry</h5>
+                            <p class="text-sm text-gray-500 mt-1">Recipe by the Beast</p>
                         </div>
-                        <div>
-                            <span class="">25 min</span>
+
+                        <div class="px-4 pb-4">
+                            <span class="text-sm text-gray-700">⏱ 25 min</span>
                         </div>
                     </div>
 
-                    <div class="card">
-                    <img src="assets/Img/noodles.jpeg" alt="" class="'w-full h-32 sm:h-48 object-cover"/>
-                        <img src="" alt=""/>
-                        <div class="'m-4">
-                            <span class="font-bold">Veg Noodles</span>
-                            <span class="block text-gray-500 text-sm">Recipie by the Beast</span>
+                    <!-- CARD 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                        <img src="assets/Img/noodles.jpeg" class="w-full h-40 object-cover">
+
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Veg Noodles</h5>
+                            <p class="text-sm text-gray-500 mt-1">Recipe by the Beast</p>
                         </div>
-                        <div>
-                            <span class="">25 min</span>
+
+                        <div class="px-4 pb-4">
+                            <span class="text-sm text-gray-700">⏱ 25 min</span>
                         </div>
                     </div>
+
                 </div>
-                <h4 class="font-light mt-12 pb-4  border-b border-red-200">Popular Recipes</h4>
-                
-                <div class="mt-8">
-                    <!--Card Goes Here-->
+
+                <!-- POPULAR -->
+                <h4 class="font-light mt-12 pb-4 border-b border-red-200">
+                    Popular Recipes
+                </h4>
+
+                <div class="mt-8 text-gray-500">
+                    More recipes coming soon...
                 </div>
             </div>
-            <div>
-                <div class="flex justify-center">
-                    <div class="bg-secondary-200 "> Load more</div>
-                </div>
+
+            <!-- LOAD MORE -->
+            <div class="flex justify-center mt-10">
+                <button class="bg-gray-200 px-6 py-2 rounded-full hover:bg-gray-300 transition">
+                    Load more
+                </button>
             </div>
+
         </main>
     </div>
+
 </body>
 </html>
