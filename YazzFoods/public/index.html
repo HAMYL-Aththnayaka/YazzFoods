@@ -17,19 +17,29 @@
         <!-- NAV -->
         <div class="md:col-span-1 bg-white shadow-md md:flex md:justify-end">
             <nav class="text-right w-full">
-                <div>
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-6 border-b">
                         <a href="#" class="text-green-500 text-xl hover:text-red-500 flex justify-start">
                             Yzz Foods
                         </a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden ">
+                        <svg class='w-6' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+
+
+                    </div>
                 </div>
 
-                <ul class="p-6 space-y-4 text-sm mt-6">
+                <ul class="p-6 space-y-4 text-sm mt-6 hidden md:block " id ="menu">
 
                     <!-- HOME -->
                     <li class="text-gray-700 font-bold">
-                        <a href="#" class="flex items-center justify-end gap-2 px-4 hover:text-green-500 border-r-4 border-primary">
+                        <a href="#"
+                            class="flex items-center justify-end gap-2 px-4 hover:text-green-500 border-r-4 border-primary">
                             <span>Home</span>
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor">
@@ -41,7 +51,8 @@
 
                     <!-- ABOUT -->
                     <li class="text-gray-700 font-bold">
-                        <a href="#" class="flex items-center justify-end gap-2 px-4 hover:text-green-500 border-r-4 border-white">
+                        <a href="#"
+                            class="flex items-center justify-end gap-2 px-4 hover:text-green-500 border-r-4 border-white">
                             <span>About</span>
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor">
@@ -53,7 +64,8 @@
 
                     <!-- CONTACT -->
                     <li class="text-gray-700 font-bold">
-                        <a href="#" class="flex items-center justify-end gap-2 px-4 hover:text-green-500 border-r-4 border-white">
+                        <a href="#"
+                            class="flex items-center justify-end gap-2 px-4 hover:text-green-500 border-r-4 border-white">
                             <span>Contact</span>
                             <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor">
