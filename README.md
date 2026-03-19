@@ -38,6 +38,9 @@ npm run watch
 Open `public/index.html` (or your main entry point) in your browser to see the live results.
 
 ---
+## Output
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/c9feab80-a727-4e9e-874f-915edfe57824" />
+
 
 ## 📁 Project Structure
 
